@@ -1,0 +1,17 @@
+public class ShapeArray {
+    public static void main(String[] args) {
+        // Creating instances of Shape subclasses
+        Shape sphere = new Sphere(6.0);          //A sphere with a radius of 6
+        Shape cylinder = new Cylinder(4.0, 8.0);        //A cylinder with a radius of 4 and height of 8
+        Shape cone = new Cone(2.0, 9.0);         //A cone with a radius of 2 and height of 9
+
+        // Storing objects in an array
+        Shape[] shapeArray = {sphere, cylinder, cone};
+
+        // Looping through the array and printing out data
+        for (Shape shape : shapeArray) {
+            System.out.println(shape.toString());
+            System.out.println("---------------");
+        }
+    }
+}
